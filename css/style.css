@@ -32,10 +32,15 @@
 }
 
 .top-image{
-    width:90%;
+    width: 90%;
     transform: rotate(-20deg);
-    float: right;
-    margin-top: 60px;
+    margin-top: 5rem;
+    position: absolute;
+    background-color: #FFADAD;
+    z-index: 10;
+    
+
+    
     
 }
 
@@ -47,10 +52,14 @@
     margin:0 8px;
 }
 
-/* Features Section */
+
+    /* Features Section */
 
 #features{
     padding: 7% 15% 7% 15%;
+    position: relative;
+    
+   
 }
 
 .feature-content{
@@ -122,31 +131,35 @@
      
   }
 
-  .partners img{
+  .logo{
     padding: 10px;
-    margin-top: 10px;
+    width: 60%;
+    margin: 10px auto 0 auto;
+    text-align: center;
     
   }
+
+  
 
   
 /* Plan Section */
 
 #plan{
     text-align: center;
-    margin-top: 30px;
-    padding: 100px;
+    padding: 10%;
     font-family:'Fira Sans', sans-serif;
+    margin: auto;
 }
 
-#plan h1{
+#plan h2{
     margin-bottom: 1rem;
 }
 
-.card{
-   
+.pricing-box{
+    margin-bottom: 2.5rem;
     text-align: center;
-    padding: 0 60px 0 60px;
-    margin: 40px 40px 0 40px;
+    
+    
 }
 
 .card-body p{
@@ -156,6 +169,8 @@
 }
 
 
+
+/* Download Section */
 
 #download-section{
 
@@ -185,3 +200,28 @@
 #footer p{
     margin-bottom: 150px;
 }
+
+
+@media (max-width:990px){
+    .top-image{
+        transform: rotate(0);
+        position: static;
+    }
+}
+
+@media (max-width:990px){
+    #head{
+        text-align: center;
+    }
+}
+
+
+@media (max-width:1310px) {
+    .logo{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
